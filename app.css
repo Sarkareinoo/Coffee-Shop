@@ -1,0 +1,161 @@
+*{
+    font-family: Times New Roman;
+
+}
+
+:root{
+    --firstcolor:#000;
+    --secondcolor:#fff;
+    --thirdcolor:#fd7e14;
+}
+
+body{
+
+    overflow-x:hidden;
+}
+
+nav{
+    background-color: #fbfbf9;
+}
+
+/* header */
+.header{
+    max-height: 500px;
+    width:100%;
+    position:relative;
+}
+.header img{
+    width:100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+
+ .overlay{
+    width:100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left: 0;
+    object-fit: cover;
+    mix-blend-mode:overlay;
+    z-index:-1;
+} 
+.header .p{
+    font-size: 3rem; 
+    width: 390px; 
+    font-family: Britannic Bold;}
+
+.header .p1{
+    font-size: 3rem; 
+    width: 420px; 
+    font-family: Britannic Bold;}
+.header .p2{
+    font-size: 3rem; 
+    width: 420px; 
+    font-family: Britannic Bold;}
+
+@media screen and (max-width: 660px) {
+    .header .p{font-size: 40px; width: 330px; }
+    .header .p1{font-size: 40px; width: 370px;}
+    .header .p2{font-size: 40px; width: 350px;}
+}
+
+@media screen and (max-width: 365px) {
+    .header .p{font-size: 25px; width: 220px; }
+    .header .p1{font-size: 25px; width: 220px;}
+    .header .p2{font-size: 25px; width: 230px;}
+}
+        
+.move{
+    padding-top:300px ;
+}
+
+/* about us  */
+
+.carousel-item img{
+    object-fit: cover;
+}
+
+.main-heading{
+    font-size: 3rem;
+    color:var(--firstcolor);
+    text-align:center;
+}
+
+.sub-heading{
+    font-size: 1rem;
+    color: var(--firstcolor);
+    text-align: center;
+}
+
+.heading-line{
+    width: 100px;
+    height: 2px;
+    background-color: var(--fourthcolor);
+    margin: 30px auto;
+
+}
+
+.heading-lin{
+    width: 100px;
+    height: 2px;
+    background-color: var(--firstcolor);
+    margin: 30px auto;
+    margin-bottom: 70px;
+
+}
+
+.heading-ling{
+    width: 120px;
+    height: 2px;
+    background-color: var(--firstcolor);
+    margin: 10px auto;
+
+}
+
+.about-font h2{
+    font-family: Script MT Bold;
+}
+
+/* menu  */
+
+.plate-size{
+    text-align: center;
+    
+}
+
+
+
+.plate-size img{
+    width: 70px;
+    height: 70px;
+}
+
+.menu-list{
+    text-align:center;
+    margin-top: 20px;
+}
+
+.accordion .accordion-button:not(.collaps){
+    background-color: rgb(246, 242, 242);
+    color: var(--firstcolor);
+}
+
+.accordion .accordion-button:not(.collapsed){
+    background-color: var(--firstcolor);
+    color: var(--secondcolor);
+}
+
+
+#footer ul{
+    list-style-type:none;
+    
+}
+
+#footer ul li{
+    padding:10px 0;
+}

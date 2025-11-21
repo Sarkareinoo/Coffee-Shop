@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="app.css">
+    <!-- Js link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Js icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- AOS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Bread and coffee</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light text-uppercase sticky-top shadow-lg">
+        <div class="container">
+            <a href="" class="navbar-brand"><img src="images/3.png" class="mt-3 " alt=""
+                    style="width: 70px; height: 70px;"></a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse py-3" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mx-1 ">
+                        <a href="#header" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a href="#about" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a href="#gallery" class="nav-link">GALLERY</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a href="#menu" class="nav-link">MENU</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a href="#faq" class="nav-link">FAQ</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-1">
+                        <a href="#loginOffcanvas" data-bs-toggle="offcanvas" class="nav-link">Sign In</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a href="#registerOffcanvas" data-bs-toggle="offcanvas" class="nav-link">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="header" class="header">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/1.webp"></img>
+                    <div class="overlay"></div>
+                    <div class="container py-5">
+                        <div class="move">
+                            <p class="text-black bg-light ps-3 p" data-aos="fade-left" data-aos-duration="2000">COFFEES
+                                & TEA</p>
+                            <a class="btn btn-dark text-light" href="#registerOffcanvas" data-bs-toggle="offcanvas"
+                                data-aos="fade-right" data-aos-duration="2000">VIEW MENU</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/4.jpg"></img>
+                    <div class="overlay"></div>
+                    <div class="container py-5">
+                        <div class="move">
+                            <p class="text-black bg-light ps-3 p1" data-aos="fade-left" data-aos-duration="2000">ENJOY
+                                ON MENU</p>
+
+                            <a class="btn btn-dark text-light" href="#registerOffcanvas" data-bs-toggle="offcanvas"
+                                data-aos="fade-right" data-aos-duration="2000">VIEW MENU</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/5.jpg" style="height: 100%; object-fit: cover;"></img>
+                    <div class="overlay"></div>
+                    <div class="container py-5">
+                        <div class="move">
+                            <p class="text-black bg-light ps-3 p2" data-aos="fade-left" data-aos-duration="2000">CAKE &
+                                DESSERT</p>
+
+                            <a class="btn btn-dark text-light" href="#registerOffcanvas" data-bs-toggle="offcanvas"
+                                data-aos="fade-right" data-aos-duration="2000">VIEW MENU</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <section id="about" class="container p-5">
+        <div class="sub-heading" data-aos="fade-left">ABOUT US</div>
+        <div class="main-heading" data-aos="fade-right">Who We Are</div>
+        <div class="heading-line" data-aos="fade-left"></div>
+        <div class="row align-items-center">
+            <div class="col-md-6 about-font" data-aos="fade-right" data-aos-duration="1000">
+                <h3 class="mb-2">Our Story</h3>
+                <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laboriosam veritatis
+                    ab explicabo. Iusto rerum quisquam praesentium explicabo cupiditate sapiente aut eaque, vitae modi
+                    ad, qui earum porro. Iure, repudiandae.</p>
+                <h3 class="mb-2">Our Goal</h3>
+                <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laboriosam veritatis
+                    ab explicabo. Iusto rerum quisquam praesentium explicabo cupiditate sapiente aut eaque, vitae modi
+                    ad, qui earum porro. Iure, repudiandae.</p>
+                <h3 class="mb-2">Meet The Partners</h3>
+                <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laboriosam veritatis
+                    ab explicabo. Iusto rerum quisquam praesentium explicabo cupiditate sapiente aut eaque, vitae modi
+                    ad, qui earum porro. Iure, repudiandae.</p>
+            </div>
+            <div class="col-md-6 ">
+                <img src="images/5(1).jpg" alt="" data-aos="fade-left" data-aos-duration="1000"
+                    class="img-thumbnail rounder2 mb-2 border border-dark border-3"
+                    style="width: 100%; height: 250px; object-fit: cover;"><br>
+
+                <img src="images/7.webp" alt="" data-aos="fade-left" data-aos-duration="1500"
+                    class="img-thumbnail rounder2 border border-dark border-3"
+                    style="width: 100%; height: 250px;  object-fit: cover;">
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container p-5">
+        <div class="sub-heading" data-aos="fade-right">FOOD GALLERY</div>
+        <div class="main-heading" data-aos="fade-left">Review TO Choice</div>
+        <div class="heading-line" data-aos="fade-left"></div>
+
+        <h2 class="mb-5"><img src="images/2.png" alt="" class="mx-4" style="width: 50px; height: 40px;">Tea & Coffee
+        </h2>
+        <div class="row gy-2 ">
+            <div class="col-md-6 col-lg-3" data-aos="fade-right">
+                <div class="card bg-dark text-white">
+                    <div class="card-header">
+                        <img src="images/f5.jpg" alt="" style="width: 100%; height: 200px;">
+                    </div>
+                    <div class="card-body">
+                        <div class="float-end">
+                            <span><i class="bi bi-hand-thumbs-up"></i> 48</span>&nbsp;
+                            <span><i class="bi bi-heart"></i>40</span>
+
+                        </div>
+                        <div class="text-warning">
+
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+
+                        <h4>Caramel Frappe</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga expedita
+                            repudiandae eius quis illum, architecto fugit. </p>
+                        <div>
+                            <!-- <span><i class="bi bi-stopwatch"></i>13m | Sara </span>
+                            <span class="float-end"><i class="bi bi-chat"></i> 52</span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                <div class="card bg-dark text-white">
+                    <div class="card-header">
+                        <img src="images/f6.webp" alt="" style="width: 100%; height: 200px;">
+                    </div>
+                    <div class="card-body">
+                        <div class="float-end">
+                            <span><i class="bi bi-hand-thumbs-up"></i> 57</span>&nbsp;
+                            <span><i class="bi bi-heart"></i> 52</span>
+
+                        </div>
+                        <div class="text-warning">
+
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+
+                        <h4>Latte Macchiato</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga expedita
+                            repudiandae eius quis illum, architecto fugit.</p>
+                        <div>
+                            <!-- <span><i class="bi bi-stopwatch"></i>13m | Sara </span>
+                            <span class="float-end"><i class="bi bi-chat"></i> 52</span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                <div class="card bg-dark text-white">
+                    <div class="card-header">
+                        <img src="images/f7.jpg" alt="" style="width: 100%; height: 200px;">
+                    </div>
+                    <div class="card-body">
+                        <div class="float-end">
+                            <span><i class="bi bi-hand-thumbs-up"></i> 70</span>&nbsp;
+                            <span><i class="bi bi-heart"></i> 55</span>
+
+                        </div>
+                        <div class="text-warning">
+
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+
+                        <h4>Expresso</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga expedita
+                            repudiandae eius quis illum, architecto fugit.</p>
+                        <div>
+                            <!-- <span><i class="bi bi-stopwatch"></i>13m | Sara </span>
+                            <span class="float-end"><i class="bi bi-chat"></i> 52</span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-left">
+                <div class="card bg-dark text-white">
+                    <div class="card-header">
+                        <img src="images/f8.jpg" alt="" style="width: 100%; height: 200px;">
+                    </div>
+                    <div class="card-body">
+                        <div class="float-end">
+                            <span><i class="bi bi-hand-thumbs-up"></i> 56</span>&nbsp;
+                            <span><i class="bi bi-heart"></i>51</span>
+
+                        </div>
+                        <div class="text-warning">
+
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+
+                        <h4>Americano</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga expedita
+                            repudiandae eius quis illum, architecto fugit. </p>
+                        <div>
+                            <!-- <span><i class="bi bi-stopwatch"></i>13m | Sara </span>
+                            <span class="float-end"><i class="bi bi-chat"></i> 52</span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="mb-5 mt-5"><img src="images/1.png" alt="" style="width: 80px; height: 40px;">Cake & Dessert</h2>
+            <div class="row gy-2">
+                <div class="col-md-6 col-lg-3" data-aos="fade-right">
+                    <div class="card bg-dark text-white">
+                        <div class="card-header">
+                            <img src="images/f1.jpg" alt="" style="width: 100%; height: 200px;">
+                        </div>
+                        <div class="card-body">
+                            <div class="float-end">
+                                <span><i class="bi bi-hand-thumbs-up"></i> 52</span>&nbsp;
+                                <span><i class="bi bi-heart"></i>48</span>
+
+                            </div>
+                            <div class="text-warning">
+
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+
+                            <h4>Pizza</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga expedita
+                                repudiandae eius quis illum, architecto fugit. </p>
+                            <div>
+                                <!-- <span><i class="bi bi-stopwatch"></i>13m | Sara </span>
+                            <span class="float-end"><i class="bi bi-chat"></i> 52</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="card bg-dark text-white">
+                        <div class="card-header">
+                            <img src="images/f2.jpg" alt="" style="width: 100%; height: 200px;">
+                        </div>
+                        <div class="card-body">
+                            <div class="float-end">
+                                <span><i class="bi bi-hand-thumbs-up"></i> 47</span>&nbsp;
+                                <span><i class="bi bi-heart"></i> 40</span>
+
+                            </div>
+                            <div class="text-warning">
+
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+
+                            <h4>Choco Cupcake</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga expedita
+                                repudiandae eius quis illum, architecto fugit.</p>
+                            <div>
+                                <!-- <span><i class="bi bi-stopwatch"></i>13m | Sara </span>
+                            <span class="float-end"><i class="bi bi-chat"></i> 52</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="card bg-dark text-white">
+                        <div class="card-header">
+                            <img src="images/f3.jpg" alt="" style="width: 100%; height: 200px;">
+                        </div>
+                        <div class="card-body">
+                            <div class="float-end">
+                                <span><i class="bi bi-hand-thumbs-up"></i> 70</span>&nbsp;
+                                <span><i class="bi bi-heart"></i> 55</span>
+
+                            </div>
+                            <div class="text-warning">
+
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+
+                            <h4>Croissant</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga expedita
+                                repudiandae eius quis illum, architecto fugit.</p>
+                            <div>
+                                <!-- <span><i class="bi bi-stopwatch"></i>13m | Sara </span>
+                            <span class="float-end"><i class="bi bi-chat"></i> 52</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-left">
+                    <div class="card bg-dark text-white">
+                        <div class="card-header">
+                            <img src="images/f4.jpg" alt="" style="width: 100%; height: 200px;">
+                        </div>
+                        <div class="card-body">
+                            <div class="float-end">
+                                <span><i class="bi bi-hand-thumbs-up"></i> 65</span>&nbsp;
+                                <span><i class="bi bi-heart"></i>54</span>
+
+                            </div>
+                            <div class="text-warning">
+
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+
+                            <h4>Donuts</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga expedita
+                                repudiandae eius quis illum, architecto fugit. </p>
+                            <div>
+                                <!-- <span><i class="bi bi-stopwatch"></i>13m | Sara </span>
+                            <span class="float-end"><i class="bi bi-chat"></i> 52</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <section id="menu" class="container p-5">
+        <div class="sub-heading" data-aos="fade-right">MENU</div>
+        <div class="main-heading" data-aos="fade-left">Search & Order</div>
+        <div class="heading-line" data-aos="fade-left"></div>
+
+        <div class="plate-size">
+            <img src="images/b1.png" class="mx-4" alt="" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="images/b2.png" class="mx-4" alt="" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="images/b3.png" class="mx-4" alt="" data-aos="zoom-in" data-aos-duration="1000">
+        </div>
+
+        <div class="heading-line" data-aos="fade-left"></div>
+
+        <div class="container">
+            <div class="row ms-5 mb-5 plate-size gy-2 ">
+                <div class="col-md-2 col-sm6">
+                    <a href="#"><span class="ms-3"></span></a>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <a href="#all" class="nav-link list-group-item border-end border-dark">All</a>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <a href="#bread" class="nav-link list-group-item border-end border-dark">Bread</a>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <a href="#tea" class="nav-link list-group-item border-end border-dark">Drink</a>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <a href="#dessert" class="nav-link">Dessert</a>
+                </div>
+                <div class="col-md-2 col-none-6">
+                    <a href="#" class="nav-link"><span class="ms-3"></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="all" class="menu-list">
+
+            <h3 id="bread" class="mb-5">Already Breakfast</h3>
+            <div class="heading-lin" data-aos="fade-left"></div>
+            <div class="row gy-2 ">
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-right">
+                    <div class="card bg-white text-dark border-end border-dark">
+                        <div class="card-body">
+                            <img src="images/f3.jpg" alt="" style="width: 100%; height: 250px;">
+
+                            <h4 class="mt-2">Croissant</h4>
+                            <div class="heading-ling"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga expedita
+                                repudiandae. </p>
+                            <p class="fs-2">5000 MMK</p>
+                            <button class="btn btn-dark text-light">Order Now</button>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="card bg-white text-dark border-end border-dark">
+                        <div class="card-body">
+                            <img src="images/f9.jpg" alt="" style="width: 100%; height: 250px;">
+
+                            <h4 class="mt-2">Muffin</h4>
+                            <div class="heading-ling"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga expedita
+                                repudiandae. </p>
+                            <p class="fs-2">5000 MMK</p>
+                            <button class="btn btn-dark text-light">Order Now</button>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="card bg-white text-dark border-end border-dark">
+                        <div class="card-body">
+                            <img src="images/f10.jpg" alt="" style="width: 100%; height: 250px;">
+
+                            <h4 class="mt-2">Cream Bun</h4>
+                            <div class="heading-ling"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga expedita
+                                repudiandae. </p>
+                            <p class="fs-2">5000 MMK</p>
+                            <button class="btn btn-dark text-light">Order Now</button>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-right">
+                    <div class="card bg-white text-dark border-end border-dark">
+                        <div class="card-body">
+                            <img src="images/f11.jpg" alt="" style="width: 100%; height: 250px;">
+
+                            <h4 class="mt-2">Pretzel
+                            </h4>
+                            <div class="heading-ling"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga expedita
+                                repudiandae. </p>
+                            <p class="fs-2">5000 MMK</p>
+                            <button class="btn btn-dark text-light">Order Now</button>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="tea">
+                <h3 class="mb-5 mt-5">Tea & Coffee</h3>
+                <div class="heading-lin" data-aos="fade-left"></div>
+                <div class="row gy-2 ">
+
+                    <div class="col-md-6 col-lg-3" data-aos="fade-right">
+                        <div class="card bg-white text-dark border-end border-dark">
+                            <div class="card-body">
+                                <img src="images/f5.jpg" alt="" style="width: 100%; height: 250px;">
+
+                                <h4 class="mt-2">Caramel Frappe</h4>
+                                <div class="heading-ling"></div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga
+                                    expedita
+                                    repudiandae. </p>
+                                <p class="fs-2">5000 MMK</p>
+                                <button class="btn btn-dark text-light">Order Now</button>
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                        <div class="card bg-white text-dark border-end border-dark">
+                            <div class="card-body">
+                                <img src="images/f6.webp" alt="" style="width: 100%; height: 250px;">
+
+                                <h4 class="mt-2">Latte Macchiato</h4>
+                                <div class="heading-ling"></div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga
+                                    expedita
+                                    repudiandae. </p>
+                                <p class="fs-2">5000 MMK</p>
+                                <button class="btn btn-dark text-light">Order Now</button>
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                        <div class="card bg-white text-dark border-end border-dark">
+                            <div class="card-body">
+                                <img src="images/f7.jpg" alt="" style="width: 100%; height: 250px;">
+
+                                <h4 class="mt-2">Expresso</h4>
+                                <div class="heading-ling"></div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga
+                                    expedita
+                                    repudiandae. </p>
+                                <p class="fs-2">5000 MMK</p>
+                                <button class="btn btn-dark text-light">Order Now</button>
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3" data-aos="fade-right">
+                        <div class="card bg-white text-dark border-end border-dark">
+                            <div class="card-body">
+                                <img src="images/f8.jpg" alt="" style="width: 100%; height: 250px;">
+
+                                <h4 class="mt-2">Americano
+                                </h4>
+                                <div class="heading-ling"></div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga
+                                    expedita
+                                    repudiandae. </p>
+                                <p class="fs-2">5000 MMK</p>
+                                <button class="btn btn-dark text-light">Order Now</button>
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="dessert">
+                <h3 class="mb-5 mt-5">Dessert</h3>
+                <div class="heading-lin" data-aos="fade-left"></div>
+                <div class="row gy-2 ">
+
+                    <div class="col-md-6 col-lg-3" data-aos="fade-right">
+                        <div class="card bg-white text-dark border-end border-dark">
+                            <div class="card-body">
+                                <img src="images/f1.jpg" alt="" style="width: 100%; height: 250px;">
+
+                                <h4 class="mt-2">Pizza</h4>
+                                <div class="heading-ling"></div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga
+                                    expedita
+                                    repudiandae. </p>
+                                <p class="fs-2">5000 MMK</p>
+                                <button class="btn btn-dark text-light">Order Now</button>
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                        <div class="card bg-white text-dark border-end border-dark">
+                            <div class="card-body">
+                                <img src="images/f4.jpg" alt="" style="width: 100%; height: 250px;">
+
+                                <h4 class="mt-2">Donuts</h4>
+                                <div class="heading-ling"></div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga
+                                    expedita
+                                    repudiandae. </p>
+                                <p class="fs-2">5000 MMK</p>
+                                <button class="btn btn-dark text-light">Order Now</button>
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                        <div class="card bg-white text-dark border-end border-dark">
+                            <div class="card-body">
+                                <img src="images/f12.jpg" alt="" style="width: 100%; height: 250px;">
+
+                                <h4 class="mt-2">Cookies</h4>
+                                <div class="heading-ling"></div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga
+                                    expedita
+                                    repudiandae. </p>
+                                <p class="fs-2">5000 MMK</p>
+                                <button class="btn btn-dark text-light">Order Now</button>
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3" data-aos="fade-right">
+                        <div class="card bg-white text-dark border-end border-dark">
+                            <div class="card-body">
+                                <img src="images/f2.jpg" alt="" style="width: 100%; height: 250px;">
+
+                                <h4 class="mt-2">Choco Cupcake
+                                </h4>
+                                <div class="heading-ling"></div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum fuga
+                                    expedita
+                                    repudiandae. </p>
+                                <p class="fs-2">5000 MMK</p>
+                                <button class="btn btn-dark text-light">Order Now</button>
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <section id="faq" class="container p-5">
+        <div class="sub-heading" data-aos="fade-right">FAQ</div>
+        <div class="main-heading" data-aos="fade-left">Common Questions</div>
+        <div class="heading-line" data-aos="fade-left"></div>
+
+        <div class="accordion mt-5" id="accordionExample" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Lorem ipsum dolor sit amet.
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, corporis aut? Libero
+                            temporibus sequi, tenetur consectetur delectus assumenda similique placeat optio
+                            voluptatibus velit iste, quaerat quae consequuntur nulla! Dignissimos, vero?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Lorem ipsum dolor sit amet.
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti velit quasi asperiores
+                            ratione iusto reiciendis pariatur obcaecati, maiores officia error vitae, animi accusantium
+                            saepe eligendi eos, eius neque iste vel!</p>
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Lorem ipsum dolor sit amet.
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti velit quasi asperiores
+                            ratione iusto reiciendis pariatur obcaecati, maiores officia error vitae, animi accusantium
+                            saepe eligendi eos, eius neque iste vel!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Lorem ipsum dolor sit amet.
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti velit quasi asperiores
+                            ratione iusto reiciendis pariatur obcaecati, maiores officia error vitae, animi accusantium
+                            saepe eligendi eos, eius neque iste vel!</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="contact" class="container p-5">
+        <div class="sub-heading" data-aos="fade-right">CONTACT</div>
+        <div class="main-heading" data-aos="fade-left">Contact Us</div>
+        <div class="heading-line" data-aos="fade-left"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-5 mt-3">
+                    <i class="bi bi-globe2 border border-light p-4 text-dark"
+                        style="font-size: 30px; background-color:#d8d8d9;"></i><span class="fs-5">&nbsp;
+                        &nbsp;may@gmail.com</span>
+                </div>
+
+                <div class="mb-5 mt-2">
+                    <i class="bi bi-geo-alt-fill border border-light p-4 text-dark"
+                        style="font-size: 30px; background-color:#d8d8d9;"></i><span class="fs-5">&nbsp;
+                        &nbsp;No. 646 Dangon(East)</span>
+                </div>
+                <div class="mb-5 mt-2">
+                    <i class="bi bi-telephone-inbound-fill border border-light p-4 text-dark"
+                        style="font-size: 30px; background-color:#d8d8d9;"></i><span class="fs-5">&nbsp;
+                        &nbsp;09 425658833</span>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+                <img src="images/8.jpg" alt="" data-aos="fade-right" data-aos-duration="1000"
+                    class="img-thumbnail rounder2 mb-2 border border-dark border-3"
+                    style="width: 100%; height: 270px; object-fit: cover;">
+                
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="container-fluid bg-dark text-light p-5">
+        <div class="row g-5">
+            <div class="col-md-4">
+                <div class="sub-heading text-light">BEAN & BREAD</div>
+                <div class="heading-line"></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus impedit consectetur quis delectus
+                    maiores ex ullam repudiandae voluptas hic, aliquid quidem expedita ratione necessitatibus. Delectus
+                    repellendus fuga impedit corporis nihil?</p>
+                <div>
+                    <a href="" class="btn btn-outline-success text-white mx-1"><i class="bi bi-facebook"></i></a>
+                    <a href="" class="btn btn-outline-success text-white mx-1"><i class="bi bi-twitter"></i></a>
+                    <a href="" class="btn btn-outline-success text-white mx-1"><i class="bi bi-youtube"></i></a>
+                    <a href="" class="btn btn-outline-success text-white mx-1"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="sub-heading text-light">QUICK CONTACT</div>
+                <div class="heading-line"></div>
+                <ul>
+                    <li><i class="bi bi-geo-alt-fill text-light"></i> No.123, Hlaing St, Yangon, Burma</li>
+                    <li><i class="bi bi-telephone-fill text-light"></i> +95 123 45</li>
+                    <li><i class="bi bi-envelope-fill text-light"></i> gymfitness@gmail.com</li>
+                    <li><i class="bi bi-globe2 text-light"></i><a href=""> www.gymfitness.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="sub-heading text-light">SEND US MESSAGE</div>
+                <div class="heading-line"></div>
+                <form action="">
+                    <div class="mb-3">
+                        <input type="text" class="form-control border border-success" placeholder="Your Email">
+                    </div>
+                    <div class="mb-3">
+                        <textarea name="" id="" class="form-control border border-success" rows="5"
+                            placeholder="Your Message"></textarea>
+                    </div>
+                    <button class="btn btn-danger"><i class="bi bi-send-fill"></i> Send</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <section id="copyright" class="container-fluid bg-dark text-light text-center p-5">
+        <p>&copy;Copyright & all right reserved by Hornbill-tech.</p>
+    </section>
+
+    <section id="sign-in-up">
+        <div class="offcanvas offcanvas-end" id="loginOffcanvas" data-bs-scroll="true">
+            <div class="offcanvas-header">
+                <button class="btn btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="sub-heading text-dark"><b>LOGIN FORM</b></div>
+                <div class="heading-line"></div>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="">Email</label>
+                        <input type="text" class="form-control border border-dark">
+                    </div>
+                    <div class="mb-3">
+                        <label for="">Password</label>
+                        <input type="text" class="form-control border border-dark">
+                    </div>
+                    <button class="btn btn-dark float-end"><i class="bi bi-send-fill"></i> Sign In</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-end" id="registerOffcanvas" data-bs-scroll="true">
+            <div class="offcanvas-header">
+                <button class="btn btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="sub-heading text-dark"><b>REGISTRATION FORM</b></div>
+                <div class="heading-line"></div>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="">Name</label>
+                        <input type="text" class="form-control border border-dark">
+                    </div>
+                    <div class="mb-3">
+                        <label for="">Email</label>
+                        <input type="text" class="form-control border border-dark">
+                    </div>
+                    <div class="mb-3">
+                        <label for="">Password</label>
+                        <input type="text" class="form-control border border-dark">
+                    </div>
+                    <div class="mb-3">
+                        <label for="">Confirm Password</label>
+                        <input type="text" class="form-control border border-dark">
+                    </div>
+                    <button class="btn btn-dark float-end"><i class="bi bi-send-fill"></i> Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
